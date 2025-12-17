@@ -24,23 +24,6 @@
 
 ---
 
-## Структура проекта
-
-3DES-part2/
-├─ CMakeLists.txt
-├─ README.md
-├─ .gitignore
-├─ data/
-│  └─ students.csv
-├─ include/
-│  └─ crypto3des.hpp
-├─ src/
-│  ├─ crypto3des.cpp
-│  └─ main.cpp
-└─ results/
-
----
-
 ## Описание файлов
 
 - `data/students.csv` — входной датасет (данные студентов);
@@ -56,6 +39,7 @@
 Перед сборкой необходимо, чтобы в системе была установлена библиотека OpenSSL (пакет `libssl-dev`).
 
 Команда для сборки и запуска проекта:
+
 ```rm -rf build && rm -rf results && mkdir -p results && cmake -B build && cmake --build build  && ./build/three_des```
 ---
 После запуска пользователю предлагается меню:
